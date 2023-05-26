@@ -29,7 +29,7 @@ const CategoriesList: React.FC = () => {
                 {categories.map((category) => (
                     <div className="col-md-4 mb-4" key={category.id}>
                         <Card>
-                            <Card.Img variant="top" src={category.image} alt={category.name} />
+                            <Card.Img variant="top" src={`http://localhost:5287/images/${category.image}`} alt={category.name} />
                             <Card.Body>
                                 <Card.Title>{category.name}</Card.Title>
                                 <Card.Text>{category.description}</Card.Text>
